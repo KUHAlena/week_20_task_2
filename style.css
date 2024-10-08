@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('fonts/Starjedi.woff2') format('woff2'),
+        url('fonts/Starjedi.woff') format('woff'),
+        url('fonts/Starjedi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Star Jedi', Arial, sans-serif;
+    margin: 20px;
+    background-color: #000;
+    color: #FFE81F; 
+}
+
+h1 {
+    color: #FFE81F;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+select, input, button {
+    margin: 10px;
+}
+
+select, input {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0.3s, background-color 0.3s;
+    border: 2px solid #FFE81F;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input:hover::placeholder {
+    color: rgb(73, 72, 72);
+}
+
+button {
+    background-color: #000000;
+    color: #FFE81F;
+    border: 2px solid #FFE81F;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333333;
+    color: #FFD700;
+}
+
+.loading {
+    display: none;
+    font-weight: bold;
+    color: #FFD700;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result {
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    overflow: hidden; 
+    font-size: 16px;
+    white-space: normal; 
+    word-wrap: break-word; 
+    max-height: 500px;
+}

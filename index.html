@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SWAPI Приложение</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Поиск по вселенной «Звёздных войн»</h1>
+
+    <div class="form-container">
+        <select id="entity" aria-label="Выбор сущности">
+            <option value="" disabled selected>Выберите сущность:</option>
+            <option value="people">Люди</option>
+            <option value="planets">Планеты</option>
+            <option value="films">Фильмы</option>
+            <option value="species">Виды</option>
+            <option value="starships">Звездные корабли</option>
+            <option value="vehicles">Транспортные средства</option>
+        </select>
+
+        <input type="number" id="id" min="1" max="10" value="Введите номер (1-10)" placeholder="Введите номер (1-10)" aria-label="Введите номер сущности">
+    
+        <button id="fetchButton" aria-label="Выполнить поиск">Вперёд!</button>
+    </div>
+    
+    <div class="loading" id="loading">Идёт загрузка...</div>
+    <div class="error" id="error"></div>
+    <div class="result" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
